@@ -102,9 +102,9 @@ bool isValid(string password)
 	return true; 
 } 
 
-void print(string arr[]){
+void print(string pass){
     
-    if (isValid(arr))
+    if (isValid(pass))
         cout << "Yes" << endl;
 	else
 	    cout << "No" << endl;
@@ -112,19 +112,18 @@ void print(string arr[]){
 // Driver code 
 int main() 
 { 
-	string password;
+	string password,pass;
 	int n;
-  cin>>n;
 	string arr[10];
 	int i=1;
+	cin>>n;
 	while(i<=n){
 	    cin>>password;
 	    arr[i]=password;
 	 i++;
 	}
 	for(i=1;i<=n;i++){
-	    print(arr[i]);
+	    pass=arr[i];
+	    print(pass);
 	}
-	
 }
-
